@@ -1,5 +1,6 @@
 // ignore_for_file: avoid_unnecessary_containers
 
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -49,65 +50,31 @@ class MyApp extends StatelessWidget {
             endIndent: 20,
             height: 10,
           ),
-          Container(
-            child: Padding(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-              child: Container(
-                height: 64.0,
-                decoration: const BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.all(Radius.circular(10.0))),
-                child: const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 8),
-                      child: Icon(
-                        Icons.phone,
-                        size: 32,
-                        color: Colors.black,
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 22),
-                      child: Text(
-                        '(+20)1281669908',
-                        style: TextStyle(color: Colors.black, fontSize: 18),
-                      ),
-                    ),
-                  ],
-                ),
+          const Card(
+            margin: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+            child: ListTile(
+              leading: Icon(
+                Icons.phone,
+                size: 32,
+                color: Colors.black,
+              ),
+              title: Text(
+                '(+20)1281669908',
+                style: TextStyle(color: Colors.black, fontSize: 22.0),
               ),
             ),
           ),
-          Container(
-            child: Padding(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-              child: Container(
-                height: 64.0,
-                decoration: const BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.all(Radius.circular(10.0))),
-                child: const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 8),
-                      child: Icon(
-                        Icons.mail,
-                        size: 32,
-                        color: Colors.black,
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 22),
-                      child: Text(
-                        'ahmedna694@gmail.com',
-                        style: TextStyle(color: Colors.black, fontSize: 18),
-                      ),
-                    ),
-                  ],
-                ),
+          const Card(
+            margin: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+            child: ListTile(
+              leading: Icon(
+                Icons.email,
+                size: 32,
+                color: Colors.black,
+              ),
+              title: Text(
+                'ahmedna694@gmail.com',
+                style: TextStyle(color: Colors.black, fontSize: 22.0),
               ),
             ),
           ),
